@@ -19,10 +19,15 @@
     <meta name="description" content>
     <meta name="author" content="John Doe">
     <meta name="keywords" content>
-    <title>Archive ~ Hexo</title>
+    <title>大川的推特 ~ Hexo</title>
     <link rel="stylesheet" href="/css/Material_Icons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/main.css">
+    
+        <link rel="stylesheet" href="/css/post.css">
+        
+            <link rel="stylesheet" href="/css/Prettify/tomorrow-night-eighties.min.css">
+        
     
 </head>
 
@@ -76,63 +81,72 @@
     </div>
 </nav>
     
-  <div class="page-header header-filter" data-parallax="false" style="background-image: url('/img/archive-banner.jpg'); height: 70vh;">
+  <div class="page-header header-filter" data-parallax="false" style="background-image: url('/img/post-banner.jpg'); height: 70vh;">
     
       <div class="container">
-        <h1 class="title text-center">Archive</h1>
+        <h1 class="title text-center post_title">大川的推特</h1>
+        <p class="text-center"><b>Monday, February 25th 2019, 8:46 pm</b></p>
       </div>
     
   </div>
 
   
   
+  
+    <div class="row" style="margin: 0 0 0; z-index: 999;">
+  <div class="col-md-8 offset-md-1">
     <div class="main main-raised">
       <div class="container">
-      
-          <div class="section">
-            <div class="row">
-    <div class="col-md-10 offset-md-1">
-        <div class="card">
-            <div class="card-body">
-                <ul class="nav nav-pills nav-pills-rose">
-                    <li class="nav-item"><a class="nav-link active" href="#all" data-toggle="tab">All </a></li>
-                    
-                </ul>
-                <div class="tab-content tab-space">
-                    <div class="tab-pane active" id="all">
-                        <p class="h3">Total: 3</p>
-                        <hr>
-                        
-                            <div class="row">
-                                <div class="col-md-11">
-                                    <p class="h6">2019-02-25&nbsp;--&nbsp;<a href="/2019/02/25/post-title-2/" class="h3 title">大川的推特</a></p>
-                                </div>
-                            </div>
-                        
-                            <div class="row">
-                                <div class="col-md-11">
-                                    <p class="h6">2019-02-24&nbsp;--&nbsp;<a href="/2019/02/24/post-title-1/" class="h3 title">库存看看永安的</a></p>
-                                </div>
-                            </div>
-                        
-                            <div class="row">
-                                <div class="col-md-11">
-                                    <p class="h6">2019-02-20&nbsp;--&nbsp;<a href="/2019/02/20/post-title/" class="h3 title">历年螺卷类库总计</a></p>
-                                </div>
-                            </div>
-                         
-                    </div>
-                    
-                </div>
-            </div>  
-        </div>
-    </div>
-</div>
+        <div class="section">
+          <div class="post_content">
+              <p>大川哥说油价太高，外盘应声向下，谁还敢不服？<img src="https://i.loli.net/2019/02/25/5c73e424e33e0.jpg" alt="tu pian ming cheng"><br><img src="https://i.loli.net/2019/02/25/5c73e42a41392.png" alt="tu pian ming cheng"></p>
 
           </div>
-      
-      </div>
+          <br><br>
+          <div>
+              <p>
+                      
+              </p>
+          </div>
+        </div>
+      </div>  
     </div>
+  </div>
+  <!-- TOC -->
+  
+  <div id="toc">
+    <p class="toc-title"><i class="material-icons" style="vertical-align:middle">toc</i>Toc:</p> 
+    <div id="tocbot"></div>
+  </div>
+
+</div>
+
+
+<br>
+<!-- Comments -->
+<div class="comments" id="comments">
+
+    
+    <div class="disqus" style="width:100%">
+    <div id="disqus_thread"></div>
+    <script>               
+        var disqus_shortname = '';
+        var disqus_config = function () {
+            this.page.url = 'http://yoursite.com/2019/02/25/post-title-2/'; 
+            this.page.identifier = '/2019/02/25/post-title-2/';
+        };
+        (function() { 
+            var d = document, s = d.createElement('script');
+            s.type = 'text/javascript';
+            s.src = '//'+disqus_shortname+'.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>                                
+</div>
+
+</div>
   
 
 <footer class="footer footer-default">
@@ -157,6 +171,16 @@
       <script src="/js/plugins/moment.min.js"></script>
       <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
       <script src="/js/material-kit.min.js?v=2.0.5"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+        <script src="/js/post.js"></script>
+        <script src="/js/plugins/prettify.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('pre').addClass('prettyprint linenums');
+                prettyPrint();
+            })
+        </script>
       
 </body>
 </html>
